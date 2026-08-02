@@ -22,4 +22,7 @@ cons = ({'type': 'ineq','fun': lambda x: x[0] - 2 * x[1] + 2},
 bnds = ((0, None), (0, None))
 
 res = opt.minimize(f, (2, 0), method='SLSQP', bounds=bnds, constraints=cons)
+# (2, 0) is just a guess, from where the computation starts, and for this question, we could have taken any other point.
+# Currently, I'm not really sure how does this actually works.
+
 print(res)
