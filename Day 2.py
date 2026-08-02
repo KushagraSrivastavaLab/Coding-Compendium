@@ -11,7 +11,7 @@ import numpy as np
 
 z = np.linspace(0, 4*np.pi, 100)
 t = np.linspace(0, 10, 100)
-c = 3 * 10^8
+c = 3 * 10**8
 
 tv, zv = np.meshgrid(t, z)
 
