@@ -22,6 +22,7 @@ def dSdx(S, x):
     y1, y2 = S
     return [y1 + y2**2 + 3*x, 3*y1 + y2**3 - np.cos(x)]
 
+# Still not sure, why and how does this initial guess work
 y1_0 = 0
 y2_0 = 0
 S_0 = [y1_0, y2_0]
